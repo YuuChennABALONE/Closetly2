@@ -107,6 +107,4 @@ object ColorUtils {
         }
         return best
     }
-        return best
-    }
 }
