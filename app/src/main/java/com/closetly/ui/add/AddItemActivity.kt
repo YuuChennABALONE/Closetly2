@@ -105,7 +105,6 @@ binding.preview.isClickable = true
             }
         }
 
-        }
 
         binding.btnPick.setOnClickListener {
             pickPhoto.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly))
