@@ -24,11 +24,12 @@ class ColorPaletteAdapter(
     }
 
     override fun onBindViewHolder(holder: VH, position: Int) {
-        val it = items[position]
-        holder.label.text = it.name
-        holder.swatch.background.mutate().setTint(it.rgb)
-        holder.itemView.setOnClickListener { onPick(it) }
+        val opt = items[position]
+        holder.label.text = opt.name
+        holder.swatch.background.mutate().setTint(opt.rgb)
+        holder.itemView.setOnClickListener { onPick(opt) }
     }
+
 
     override fun getItemCount(): Int = items.size
 }
